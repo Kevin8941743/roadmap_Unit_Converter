@@ -35,3 +35,8 @@ document.querySelector("#submit").addEventListener("click", function() {
         newValue = (temperature - 273.15) * 9/5 + 32
         rounded = newValue.toFixed(3)
         document.getElementById("data").textContent = `${temperature}K = ${rounded}°F`
+        
+    } else {
+        alert(`Unable to convert ${convertFrom} to ${convertTo}, Please use the intended calculator.`)
+        return
+    }
