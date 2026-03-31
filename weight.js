@@ -26,3 +26,13 @@ document.querySelector("#submit").addEventListener("click", function() {
         newValue = weight / 453600
         rounded = newValue.toFixed(3)
         document.getElementById("data").textContent = `${weight}mg = ${rounded}lb`
+
+    } else {
+        alert(`Unable to convert ${convertFrom} to ${convertTo}. Please use the intended calculator`)
+        return
+    }
+
+    weight_input.style.display = "none"
+    weight_result.style.display = "block"
+
+})
