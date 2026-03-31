@@ -38,3 +38,11 @@ document.querySelector("#submit").addEventListener("click", function() {
     length_result.style.display = "block"
 
 })
+
+document.querySelector("#reset").addEventListener("click", function() {
+    
+    document.getElementById("item_one").value= ""
+    document.getElementById("item_two").value = ""
+    document.getElementById("item_three").value = ""
+
+})
