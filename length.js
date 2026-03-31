@@ -29,3 +29,8 @@ document.querySelector("#submit").addEventListener("click", function() {
         newValue = length / 914.4
         rounded = newValue.toFixed(2)
         document.getElementById("data").textContent = `${length}mm = ${rounded}yd`
+        
+    } else {
+        alert(`Unable to convert ${convertFrom} to ${convertTo} `)
+        return
+    }
